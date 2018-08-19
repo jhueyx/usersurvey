@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+
+		<!--Font Awesome  -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+		<!-- Animate CSS CDN -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"  crossorigin="anonymous">
+
+		<!--Reset CSS  -->
+		<link rel="stylesheet" href="css/reset.css">
+
+		<!--Bootstrap  -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<!-- Main Custom CSS  -->
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+
+			<div class="container">
+		<div class="row">
+			<div class="col-sm-6 col-sm-offset-3 col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-1">
+				<div id="mainForm">
+					<h1>Survey</h1>
+
+					<form id="form" class="form-horizontal">
+						<!-- question 1 using checkboxes -->
+						<h3>Which cities have you visited?</h3>
+						<div>
+							<label class="checkbox-inline"><input type="checkbox" class="question1" value="Paris">Paris</label>
+						</div>
+						<div>
+							<label class="checkbox-inline"><input type="checkbox" class="question1" value="New York">New York</label>
+						</div>
+						<div>
+							<label class="checkbox-inline"><input type="checkbox" class="question1" value="LA">Los Angeles</label>
+						</div>
+						<div>
+							<label class="checkbox-inline"><input type="checkbox" class="question1" value="cairo">Cairo</label>
+						</div>
+						<div>
+							<label class="checkbox-inline"><input type="checkbox" class="question1" value="none">None of the above</label>
+						</div>
+
+						<!-- question 2 using select and options -->
+						<h3>What's your favorite color?</h3>
+						<select class="form-control">
+							<option class="question2" value="">select your favorite color</option>
+							<option class="question2" value="blue">blue</option>
+							<option class="question2" value="red">red</option>
+							<option class="question2" value="green">green</option>
+							<option class="question2" value="black">black</option>
+						</select>
+
+						<!-- question 3 using radio buttons -->
+						<h3>What's your dream pet?</h3>
+						<div class="form-group">
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio1" class="question3" value="dog">dog
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio1" class="question3" value="cat">cat
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio1" class="question3" value="bird">bird
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="radio1" class="question3" value="snake">snake
+								</label>
+							</div>
+						</div>
+						<button type="button" id="submit" class="btn btn-primary">Submit Survey</button>
+					</form>
+
+					<!-- display results -->
+					<div id="results">	</div>
+    
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--Scripts  -->
+			<!--jquery updated non-slim -->
+			<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  			<!--popper  -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+			<!--bootstrap  -->
+			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+			<!-- Custom JS -->
+			<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
